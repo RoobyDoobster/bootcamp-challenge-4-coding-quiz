@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coding Quiz</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="./Assets/style.css"/>
+    </head>
+    <body>
+        <header>
+            <button id="viewHighscoreButton">View Highscores</button>
+            <p style="display: none">Time: <span id="timer">9999</span></p>
+        </header>
+        <main>
+            <h1 class="large-font">Coding Quiz</h1>
+            <p id="instructions">Try answering the following questions.</p>
+            <button class="start-button">Start</button>
+            <ul>
+
+            </ul>
+            <div id="submit">
+                <h1>Finish!</h1>
+                <p>Your final score is <span id="score">999</span></p>
+                <div id="highscoreInput">
+                    <p>Enter Name:</p>
+                    <input type="text" id="scoreName" name="scoreName" value="">
+                    <button id="submitHighscoreButton">Submit</button>
+                </div>
+            </div>   
+            <div id="highscore">
+                <h1>Highscores</h1>
+                <ol>
+
+                </ol>
+                <button id="backButton">Back</button>
+                <button id="clearButton">Clear Highscores</button>
+            </div>         
+        </main>
+        <script src="./Assets/script.js"></script>
+    </body>
+</html>
