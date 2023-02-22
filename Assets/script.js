@@ -10,18 +10,18 @@ var title = document.querySelector(`#title`);
 
 var questionObject = {
     questions:[
-        `1`,
-        `2`,
-        `3`,
-        `4`,
-        `5`,
+        `Who wrote the book "Animal Farm"?`,
+        `Who wrote the book "The Color Purple"?`,
+        `Who wrote the book "Beloved"?`,
+        `Who wrote the book series "Percy Jackson and the olympians"`,
+        `Who wrote the book "The Old Man and the Sea"?`,
     ],
     answers: [
-        [`<A>`,`correct:<2>`,`<3>`,`<4>`],
-        [`<B>`,`<2>`,`correct:<3>`,`<4>`],
-        [`<C>`,`<2>`,`<3>`,`correct:<4>`],
-        [`correct:<D>`,`<2>`,`<3>`,`<4>`],
-        [`<E>`,`correct:<2>`,`<3>`,`<4>`]
+        [`<Tennessee Williams>`,`correct:<George Orwell>`,`<Arthur Miller>`,`<Margaret Wise Brown>`],
+        [`<Don Delillo>`,`<Toni Morrison>`,`correct:<Alice Walker>`,`<Sandra Cisneros>`],
+        [`<Matthew Pearl>`,`<John Irving>`,`<Margaret Atwood>`,`correct:<Toni Morrison>`],
+        [`correct:<Rick Riordan>`,`<Zadie Smith>`,`<Kazuo Ishiguro>`,`<Cormac McCarthy>`],
+        [`<Antione de Saint-Exupéry>`,`correct:<Ernest Hemingway>`,`<George Orwell>`,`<Betty Smith>`]
     ]
 }
 
