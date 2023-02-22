@@ -6,21 +6,22 @@ var clearHighscore = document.querySelector(`#clearButton`);
 var answerEl = document.body.querySelector(`ul`);
 var back = document.querySelector(`#backButton`);
 var start = document.querySelector(`#startButton`);
-var title = document.querySelecot(`#title`);
+var title = document.querySelector(`#title`);
 
 var questionObject = {
     questions:[
-        //1
-        //2
-        //3
-        //4
-        //5
+        `1`,
+        `2`,
+        `3`,
+        `4`,
+        `5`,
     ],
     answers: [
-        [/*1*/],
-        [/*2*/],
-        [/*3*/],
-        [/*4*/]
+        [`<A>`,`correct:<2>`,`<3>`,`<4>`],
+        [`<B>`,`<2>`,`correct:<3>`,`<4>`],
+        [`<C>`,`<2>`,`<3>`,`correct:<4>`],
+        [`correct:<D>`,`<2>`,`<3>`,`<4>`],
+        [`<E>`,`correct:<2>`,`<3>`,`<4>`]
     ]
 }
 
@@ -57,7 +58,7 @@ function startGame() {
     timerCard.style.display = `block`;
 
     showQuestions(questionIndex);
-    startTimer();
+    runTimer();
 
     return
 }
@@ -186,7 +187,7 @@ function showHighscores() {
     if(tempArrayOfObjects != null) {
         for(let i=0; i<tempArrayOfObjects.length; i++) {
             var newLi = document.createElement(`li`);
-            newLi.textContent = tempArrayOfObjects[i].names +`-` + tempArrayOfObjects[index].scores;
+            newLi.textContent = tempArrayOfObjects[i].names +`-` + tempArrayOfObjects[i].scores;
             tempOrderedList.appendChild(newLi);
         }
     } else{
@@ -198,7 +199,7 @@ function showHighscores() {
 }
 
 function clearHighscores() {
-    document.querysSelector(`ol`).innerHTML = ``;
+    document.querySelector(`ol`).innerHTML = ``;
     window.localStorage.clear();
 
     setUp();
